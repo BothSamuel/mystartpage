@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartPage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Izquierdo -->
+  <aside class="sidebar">
+    
+    <div class="menu-group">
+      <div class="section-title">
+        <img src="IMG/Traffic -+ Link.png" alt="">
+        <span>Favorites</span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="file:///C|/Users/Adilson/Desktop"><img src="IMG/Desktop.png" alt=""> Workspace</a></li>
+        <li><a href="about:downloads"><img src="IMG/Box -+ This Side Up.png" alt=""> Downloads</a></li>
+        <li><a href="file:///C|/Users/Adilson"><img src="IMG/Wall Clock -+ Time Machine.png" alt=""> Places</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-group">
+      <div class="section-title">
+        <img src="IMG/Library.png" alt="">
+        <span>Bibliotecas</span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="https://drive.google.com/"><img src="IMG/Clipboard -+ Text.png" alt=""> Documents</a></li>
+        <li><a href="https://photos.google.com/"><img src="IMG/Photo.png" alt=""> Pictures</a></li>
+        <li><a href="https://music.youtube.com/"><img src="IMG/Musical Note.png" alt=""> Music</a></li>
+        <li><a href="https://www.youtube.com/"><img src="IMG/Filmstrip.png" alt=""> Video</a></li>
+        <li><a href="https://docs.google.com/"><img src="IMG/Project -+ Blueprints.png" alt=""> Works</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-group">
+      <div class="section-title">
+        <img src="IMG/Monitor -+ Wallpaper.png" alt="">
+        <span>Computer</span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="file:///C|"><img src="IMG/Disk -+ Hard Disk.png" alt=""> Hard Disc C:</a></li>
+        <li><a href="file:///D|"><img src="IMG/Disk -+ Hard Disk.png" alt=""> Hard Disc D:</a></li>
+      </ul>
+    </div>
+
+  </aside>
+
+  <!-- Rejilla de Iconos Central -->
+  <main class="main-content">
+    <div class="icon-grid" id="iconGrid">
+
+      <!-- Botón de añadir (+) -->
+      <button class="icon-card add-btn" id="openModalBtn" title="Añadir sitio">
+        <span class="plus-icon">+</span>
+      </button>
+
+    </div>
+  </main>
+
+  <!-- Modal emergente -->
+  <div class="modal-overlay" id="customModal">
+    <div class="modal-box">
+      <h3 id="modalTitle">Añadir nuevo acceso directo</h3>
+      <input type="text" id="siteName" placeholder="Nombre del sitio (ej. GitHub)" />
+      <input type="url" id="siteUrl" placeholder="URL (ej. https://github.com)" />
+      <input type="text" id="siteIcon" placeholder="Ruta de imagen (ej. IMG/github.png)" />
+      <div class="modal-actions">
+        <button type="button" id="cancelBtn" class="btn-cancel">Cancelar</button>
+        <button type="button" id="saveBtn" class="btn-save">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
